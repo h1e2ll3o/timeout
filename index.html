@@ -7,10 +7,21 @@
 </head>
 
 <body>
-    <pre id="console"></pre>
+    <spen id="Timer"></spen>
     <script>
-      setTimeout(() => document.write("setTimeout은 1분 route timeout은 30초 hapropxy는 2분"), 60000);
-      
+    /*
+        function PrintNum(){
+            for(i=1;;i++)
+        }
+        setTimeout(() => document.write("setTimeout은 1분 route timeout은 30초 hapropxy는 2분"), 60000);
+    */
+    let count = 1;
+    let counter = setInterval(Timer, 1000);
+
+    function Timer(){
+        count++;
+        document.getElementById('Timer').innerHTML=count;
+    }    
     </script>
 </body></html>
 
