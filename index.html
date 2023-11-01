@@ -23,23 +23,21 @@
         document.getElementById('Timer').innerHTML=count;
     }   
     */
-		function clickButton() {
-		    var div = document.createElement("div");
-			
-		    let count = 1;
-		    let counter = setInterval(Timer, 1000);
-		
-		    function Timer(){
-		        count++;
-		        document.getElementById('timer').innerHTML=count;
-		    }
-			
-			div.innerHTML = "Clicked!";
-			document.body.appendChild(div);
+	function clickButton() {
+		var div = document.createElement("div");
+		div.innerHTML = "Clicked!";
+		document.body.appendChild(div);
+		let count = 1;
+		let counter = setInterval(Timer, 1000);
+	
+		function Timer(){
+			count++;
+			console.log(count);
 		}
+	}
 
 	</script>
 	<button onclick="clickButton();">click</button>
-	<p id='timer'></p>
+
 </body></html>
 
