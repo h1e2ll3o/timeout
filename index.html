@@ -25,13 +25,15 @@
     */
 		function clickButton() {
 			var div = document.createElement("div");
-			div.innerHTML = "Clicked!";
-			document.body.appendChild(div);
+			
 			
 			for (var i = 0; i < 120*1000; i++) {
 				setInterval(, 1000);
 				console.log(i)
 			}
+			
+			div.innerHTML = "Clicked!";
+			document.body.appendChild(div);
 		}
 
     </script>
