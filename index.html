@@ -29,7 +29,7 @@
 			document.body.appendChild(div);
 			
 			for (var i = 0; i < 120*1000; i++) {
-				console.log(i);
+				setImterval(() => console.log(i), 1000);
 			}
 		}
 
