@@ -7,7 +7,6 @@
 </head>
 
 <body>
-    <spen id="Timer"></spen>
     <script>
     /*
         function PrintNum(){
@@ -15,13 +14,26 @@
         }
         setTimeout(() => document.write("setTimeout은 1분 route timeout은 30초 hapropxy는 2분"), 60000);
     */
+    /*
     let count = 1;
     let counter = setInterval(Timer, 1000);
 
     function Timer(){
         count++;
         document.getElementById('Timer').innerHTML=count;
-    }    
+    }   
+    */
+		function clickButton() {
+			var div = document.createElement("div");
+			div.innerHTML = "Clicked!";
+			document.body.appendChild(div);
+			
+			for (var i = 0; i < 120*1000; i++) {
+				console.log(i);
+			}
+		}
+
     </script>
+    <button onclick="clickButton();">click</button>
 </body></html>
 
