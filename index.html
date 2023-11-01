@@ -24,13 +24,15 @@
     }   
     */
 		function clickButton() {
-			var div = document.createElement("div");
+		    var div = document.createElement("div");
 			
-			
-			for (var i = 0; i < 120*1000; i++) {
-				setTimeout(() => document.getElementById('timer').innerHTML= i, 1000);
-				
-			}
+		    let count = 1;
+		    let counter = setInterval(Timer, 1000);
+		
+		    function Timer(){
+		        count++;
+		        document.getElementById('timer').innerHTML=count;
+		    }
 			
 			div.innerHTML = "Clicked!";
 			document.body.appendChild(div);
