@@ -29,14 +29,15 @@
 			
 			for (var i = 0; i < 120*1000; i++) {
 				setTimeout(, 1000);
-				div.innerHTML = i;
+				document.getElementById('timer').innerHTML= i;
 			}
 			
 			div.innerHTML = "Clicked!";
 			document.body.appendChild(div);
 		}
 
-    </script>
-    <button onclick="clickButton();">click</button>
+	</script>
+	<button onclick="clickButton();">click</button>
+	<p id='timer'></p>
 </body></html>
 
