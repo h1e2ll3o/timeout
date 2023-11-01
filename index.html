@@ -25,14 +25,17 @@
     */
 	function clickButton() {
 		var div = document.createElement("div");
-		div.innerHTML = "Clicked!";
-		document.body.appendChild(div);
-		let count = 1;
+
+		let count = 0;
 		let counter = setInterval(Timer, 1000);
 	
 		function Timer(){
 			count++;
 			console.log(count);
+		}
+		if (count == 100 ){	
+			div.innerHTML = "Clicked!";
+			document.body.appendChild(div);
 		}
 	}
 
